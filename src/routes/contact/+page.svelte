@@ -9,7 +9,7 @@
   let lastSendTime = 0; // Cooldown timer
 
   const SERVICE_ID = 'service_jkq5b3u';
-  const TEMPLATE_ID = 'template_i9ke89m';
+  const TEMPLATE_ID = 'template_pkf9tia';
   const PUBLIC_KEY = 'Rck1sjqBH0dNeF-aW';
 
   const COOLDOWN_MS = 60000; // 60 seconds between sends
