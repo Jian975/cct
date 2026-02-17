@@ -14,7 +14,7 @@
 
             Anyone is welcome, whether you’re a fluent speaker or just staring out!<br/>
 
-            Meetings are 4pm on Fridays in EAS-3367.<br/><br/>
+            Meetings are 5pm on Fridays and 8pm on Wednesdays in EAS-3379.<br/><br/>
 
 			我们的使命是将罗切斯特理工学院 (RIT) 的普通话学习者和母语使用者聚集在一起，营造一个热情友好的环境，促进语言练习和文化交流。
 我们每周五下午 4 点在 EAS-3367 聚会，一起学习中文、激发讨论、分享演示文稿、享受游戏——所有这些都旨在帮助您学习和建立联系。
