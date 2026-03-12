@@ -13,9 +13,9 @@ function Intro() {
             <Header />
             <div id="Intro-Group">
                 <div id="Intro-Group-ClubName">
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <h1 id="Intro-Group-ClubName-CH"></h1>
+                    <h2 id="Intro-Group-ClubName-EN"></h2>
+                    <h3 id="Intro-Group-ClubName-Times"></h3>
                 </div>
                 <div id="Intro-Group-Photo">
                     <div id="Intro-Group-Photo-Bg" />
