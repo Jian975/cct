@@ -1,3 +1,13 @@
 body {
-    background-color: #e3cba4FF;;
+    background-color: #c8b08b;
+}
+
+@font-face {
+  font-family: "Acme";
+  src: url("./assets/fonts/Acme-Regular.ttf");
+}
+
+@font-face {
+  font-family: "YRDZST";
+  src: url("./assets/fonts/YRDZST-Medium.ttf");
 }

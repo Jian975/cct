@@ -1,7 +1,24 @@
 .Intro {
-    background-color: #c8b08bFF;;
+    /* background-color: #c8b08bFF; */
     height: 80vh;
     width: 100%;
     /* position: relative; */
     justify-items: center;
+}
+
+
+
+#Intro-BgImg-Group{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    /* max-width: 100%; */
+    left: 0px;
+    top: -100px;
+}
+
+#Intro-BgImg-Group > img {
+    width: 120%;
+    height: 100%;
+    border: solid red 3px;
 }
