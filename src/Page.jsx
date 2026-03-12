@@ -4,10 +4,12 @@ import Contact from "./sections/Contact";
 import Events from "./sections/Events";
 import Intro from "./sections/Intro";
 
+import "./Page.css";
+
 function Page() {
     return(
         <div className="Page">
-            <p>Page has loaded.</p>
+            {/* <p>Page has loaded.</p> */}
             <Intro/>
             <About/>
             <Events/>
