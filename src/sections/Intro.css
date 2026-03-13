@@ -6,7 +6,7 @@
     justify-items: center;
 }
 
-
+/* ================== Background Image */
 
 #Intro-BgImg-Group{
     position: absolute;
@@ -15,18 +15,74 @@
     /* max-width: 100%; */
     left: 0px;
     top: -100px;
+    z-index: -1;
 }
 
 #Intro-BgImg-Group > img {
     width: 120%;
     height: 100%;
-    border: solid red 3px;
 }
 
 #Intro-Group {
-    background-color: aqua;
+    /* background-color: rgb(72, 137, 137); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+
+    margin-top: 10%;
+    column-gap: 240px;
 }
-/* 
+
+/* ================== Club Name Group */
+
+#Intro-Group-ClubName {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+}
+
+#Intro-Group-ClubName > * {
+    margin: 0px;
+    color: #f2e7c8FF;
+    font-style: normal;
+    font-weight: 500;
+}
+
 #Intro-Group-ClubName-CH {
     font-family: "YRDZST";
-} */
+    font-size: 120px;
+}
+
+#Intro-Group-ClubName-EN {
+    font-family: "Acme";
+    font-size: 32px;
+}
+
+#Intro-Group-ClubName-Times {
+    font-family: "Acme";
+    font-size: 20px;
+}
+
+/* ================== Photo */
+
+#Intro-Group-Photo-Bg {
+    background-color: white;
+    height: 360px;
+    width: 350px;
+    transform: rotate(11deg);
+}
+
+#Intro-Group-Photo-Bg > img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+

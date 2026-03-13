@@ -1,6 +1,7 @@
 import Header from "./Header";
 
 import BgImg from "../assets/bg.png";
+import GroupPhoto from "../assets/GroupPhoto.jpg";
 import "./Intro.css";
 
 function Intro() {
@@ -9,17 +10,17 @@ function Intro() {
             <div id="Intro-BgImg-Group">
                 <img src={BgImg}></img>
             </div>
-           
             <Header />
             <div id="Intro-Group">
                 <div id="Intro-Group-ClubName">
-                    <h1 id="Intro-Group-ClubName-CH"></h1>
-                    <h2 id="Intro-Group-ClubName-EN"></h2>
-                    <h3 id="Intro-Group-ClubName-Times"></h3>
+                    <h1 id="Intro-Group-ClubName-CH">中文角</h1>
+                    <h2 id="Intro-Group-ClubName-EN">Chinese Conversation Table</h2>
+                    <h3 id="Intro-Group-ClubName-Times">Wed 7PM | Fri 5PM | EAS-3379</h3>
                 </div>
                 <div id="Intro-Group-Photo">
-                    <div id="Intro-Group-Photo-Bg" />
-                    <div id="Intro-Group-Photo-Img" />
+                    <div id="Intro-Group-Photo-Bg">
+                        <img src={GroupPhoto}></img>
+                    </div>
                 </div>
             </div>
             <div id="Intro-Group-Mission">
