@@ -13,8 +13,8 @@
     display: block;
     overflow: hidden;
     /* max-width: 100%; */
-    left: 0px;
-    top: -100px;
+    left: -167px;
+    top: -110px;
     z-index: -1;
 }
 
@@ -52,11 +52,13 @@
     color: #f2e7c8FF;
     font-style: normal;
     font-weight: 500;
+    text-shadow: 1px 4px 4px #1b1b1b9d;
 }
 
 #Intro-Group-ClubName-CH {
     font-family: "YRDZST";
     font-size: 120px;
+    
 }
 
 #Intro-Group-ClubName-EN {
@@ -72,9 +74,9 @@
 /* ================== Photo */
 
 #Intro-Group-Photo-Bg {
-    background-color: white;
+    background-color: #f9f5e8e6;
     height: 360px;
-    width: 350px;
+    width: 360px;
     transform: rotate(11deg);
 }
 
@@ -83,6 +85,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
