@@ -1,0 +1,22 @@
+.TextScroll {
+    background-color: #f2e7c8DC;
+    border: 4px solid #e3cba4FF;
+    width: 70%;
+}
+
+.TextScroll > p {
+    color: #a7977dFF;
+}
+
+.TextScroll-Desc {
+    font-size: 20px;
+}
+
+.TextScroll-R {
+    text-align: right;
+}
+
+.TextScroll > .CH {
+    line-height: 1.9;
+    letter-spacing: 2px;
+}

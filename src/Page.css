@@ -11,3 +11,11 @@ body {
   font-family: "YRDZST";
   src: url("./assets/fonts/YRDZST-Medium.ttf");
 }
+
+.CH {
+  font-family: "YRDZST";
+}
+
+.EN {
+  font-family: "Acme";
+}
