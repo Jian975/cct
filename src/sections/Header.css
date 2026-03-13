@@ -1,9 +1,79 @@
 .Header {
     background-color: #e3cba4;
     width: 90%;
-    height: 60px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 0px #00000033;
+}
+
+#Header-Nav {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: center;
+    column-gap: 103px;
+}
+
+.Header-Nav-Group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    column-gap: 4px;
+
+    color: none;
+    text-decoration: none;
+}
+
+.Header-Nav-Group {
+    color: #bda888FF;
+}
+
+.Header-Nav-Group > h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.Header-Nav-Group:hover {
+    color: #74644bFF;
+}
+
+.Header-Nav-Group-Desc-Border {
+    /* width: 2px; */
+    height: 25px;
+    border: 1px solid #bda888FF;
+    border-radius: 10px;
+}
+
+.Header-Nav-Group-Desc-CH {
+    font-family: "YRDZST";
+    font-weight: 400;
+}
+
+.Header-Nav-Group-Desc-EN {
+    font-family: "Acme";
+    font-weight: 300;
+}
+
+#Header-Links {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-around;
+    column-gap: 5px;
+    margin-left: 30px;
 }
