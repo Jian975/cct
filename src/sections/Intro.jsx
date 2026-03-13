@@ -26,8 +26,8 @@ function Intro() {
             <div id="Intro-Group-Mission">
                 <div id="Intro-Group-Mission-Divider" />
                 <div id="Intro-Group-Mission-Statement">
-                    <div className="Left-Scroll"></div>
-                    <div className="Right-Scroll"></div>    
+                    <div id="Intro-Group-Mission-Statement-CH">我们的使命是将汉语学习者和母语人士聚集在一起,以促进语言练习和文化交流。</div>
+                    <div id="Intro-Group-Mission-Statement-EN">Our mission is to bring together Mandarin speakers of all levels to practice our language skills and learn about each other’s culture. </div>    
                 </div>
             </div>
         </div>

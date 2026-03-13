@@ -33,6 +33,7 @@
     justify-content: start;
 
     margin-top: 10%;
+    margin-bottom: 70px;
     column-gap: 240px;
 }
 
@@ -88,3 +89,46 @@
     padding-top: 30px;
 }
 
+/* ================== Mission Statement */
+
+#Intro-Group-Mission-Divider {
+    width: 98%;
+    height: 3px;
+    background-color: #bda888FF;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#Intro-Group-Mission-Statement {
+    background-color: #ecd7b7;
+    /* width: 100%; */
+    padding: 15px 70px;
+    display:block;
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 4px #00000035;
+}
+
+
+#Intro-Group-Mission-Statement-CH {
+    font-family: "YRDZST";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #74644bFF;
+}
+
+#Intro-Group-Mission-Statement-EN {
+    font-family: "Acme";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    text-align: center;
+    /* margin-top: -20px; */
+    color: #74644bFF;
+}
