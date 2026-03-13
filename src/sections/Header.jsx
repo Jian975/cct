@@ -13,6 +13,16 @@ function Header() {
                     <div className="Header-Nav-Group-Desc-Border" />
                     <h3 className="Header-Nav-Group-Desc-EN">About</h3>
                 </a>
+                <a className="Header-Nav-Group" href="#Events">
+                    <h3 className="Header-Nav-Group-Desc-CH">活动</h3>
+                    <div className="Header-Nav-Group-Desc-Border" />
+                    <h3 className="Header-Nav-Group-Desc-EN">Events</h3>
+                </a>
+                <a className="Header-Nav-Group" href="#Activities">
+                    <h3 className="Header-Nav-Group-Desc-CH">日常</h3>
+                    <div className="Header-Nav-Group-Desc-Border" />
+                    <h3 className="Header-Nav-Group-Desc-EN">Activities</h3>
+                </a>
                 <a className="Header-Nav-Group" href="#Contact">
                     <h3 className="Header-Nav-Group-Desc-CH">联系</h3>
                     <div className="Header-Nav-Group-Desc-Border" />
