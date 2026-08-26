@@ -15,6 +15,22 @@ export default function Home() {
   return (
     <div className="">
       <main className="">
+
+        <div className="relative">
+          <Image
+            src={HeroImage}
+            alt="Hero Image"
+            className="absolute inset-0 w-full h-[90lvh] top-0 z-[-2] blur-[20px] opacity-70"
+            />
+          <Image 
+            src={LeftTree} 
+            alt={""} 
+            className="absolute left-0 top-[-30] z-[-1] w-[480]"/>
+          <Image 
+            src={RightTree} 
+            alt={""} 
+            className="absolute right-0 top-[-30] z-[-1] w-[500]"/>
+        </div>
         
         {/* Header */}
         <div className="w-9/10 h-10 sticky top-0 border-1 m-auto mt-10">
@@ -30,10 +46,10 @@ export default function Home() {
         </div>
         
         {/* Hero Section */}
-        <div className="static w-full h-fit mb-[10px]">
+        <div className="relative w-full h-fit mb-[10px]">
 
           
-          <div className="text-center mt-[14%] relative text-shadow-sm">
+          <div className="relative text-center mt-[14%]  text-shadow-sm">
             <h1 className="font-[YRDZST] text-[100px]">中文角</h1>
             <h3 className="font-[acme] text-[30px]">Chinese Conversation Table</h3>
             <h4 className="font-[acme] text-[30px]">Wed 7PM | Fri 5PM | EAS-3379</h4>
@@ -48,22 +64,6 @@ export default function Home() {
             text2className={"font-[acme] text-[18px]"}
             />
           </div>
-
-          <Image
-            src={HeroImage}
-            alt="Hero Image"
-            className="absolute w-full h-[90lvh] top-0 z-[-2] blur-[20px] opacity-70"
-            />
-
-          <Image 
-            src={LeftTree} 
-            alt={""} 
-            className="absolute left-0 top-[-30] z-[-1] w-[480]"/>
-
-          <Image 
-            src={RightTree} 
-            alt={""} 
-            className="absolute right-0 top-[-30] z-[-1] w-[500]"/>
 
         </div>
 
