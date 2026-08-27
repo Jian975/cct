@@ -1,6 +1,8 @@
 import Image from "next/image";
 import StackedText from "./ui/text/StackedText";
 
+import CampusGroupIcon from "../public/icons/campusGroup.png";
+import EmailIcon from "../public/icons/emailIcon.png";
 
 import HeroImage from "../public/photos/Hero.jpg";
 import LeftTree from "../public/stocks/left_tree.png";
@@ -10,12 +12,17 @@ import Eastman from "../public/photos/Eastman.png";
 import Activities from "../public/photos/Activities.jpg";
 
 import FollowUs from "../public/photos/FollowUs.png";
+import PairedText from "./ui/text/PairedText";
+import UnderlinedItem from "./ui/UnderlineItem";
+import ImageButton from "./ui/ImageButton";
+import Header from "./ui/Header";
 
 export default function Home() {
   return (
     <div className="">
       <main className="">
 
+        {/* Hero Background */}
         <div className="relative">
           <Image
             src={HeroImage}
@@ -33,17 +40,34 @@ export default function Home() {
         </div>
         
         {/* Header */}
-        <div className="w-9/10 h-10 sticky top-0 border-1 m-auto mt-10">
+        <Header>
           {/* Links */}
-          <div>
+          <div className="relative flex flex-row items-center justify-center">
+            <UnderlinedItem underlineHeight="h-[1]" underlineColor="bg-foreground">
+              <PairedText 
+              text1={"关于"} 
+              text1className="font-[YRDZST] text-[22]"
+              text2={"About"}
+              text2className="font-[acme] text-[22]"
+              className=""/>
+            </UnderlinedItem>
+            
           </div>
           
           {/* Other media platforms */}
-          <div>
-
+          <div className="absolute inset-0 right-0 flex flex-row gap-3 items-center justify-end mr-[10]">
+            <ImageButton 
+              imageSrc={EmailIcon} 
+              imageLink={"mailto:"} 
+              imageAlt={"Email Icon"} 
+              className="w-[30] h-[30]"/>
+            <ImageButton 
+              imageSrc={CampusGroupIcon} 
+              imageLink={"https://campusgroups.rit.edu/CCT/"} 
+              imageAlt={"Campus Group Icon"} 
+              className="w-[30] h-[30]"/>
           </div>
-
-        </div>
+        </Header>
         
         {/* Hero Section */}
         <div className="relative w-full h-fit mb-[10px]">
@@ -118,13 +142,30 @@ export default function Home() {
 
         {/* Connect with us */}
         <div className="relative w-full h-fit">
-
-          <StackedText 
+          
+          <div className="absolute inset-55">
+            <StackedText 
                   text1={"快来关注我们吧！"} 
                   text1className="font-[YRDZST] text-[48px] color-[#757063]"
                   text2={"Connect with us!"}
                   text2className={"font-[acme] text-[36px]"} 
-                  className="absolute inset-55 text-center"/>
+                  className=" text-center" />
+            <div className="flex flex-row gap-3 items-center justify-center">
+              <ImageButton 
+                imageSrc={EmailIcon} 
+                imageLink={"mailto:"} 
+                imageAlt={"Email Icon"} 
+                className="w-[80] h-[80]"/>
+              <ImageButton 
+                imageSrc={CampusGroupIcon} 
+                imageLink={"https://campusgroups.rit.edu/CCT/"} 
+                imageAlt={"Campus Group Icon"} 
+                className="w-[80] h-[80]"/>
+            </div>
+          </div>
+          
+
+          
 
           <Image 
             src={FollowUs} 
