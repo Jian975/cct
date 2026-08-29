@@ -82,7 +82,7 @@ export default function Home() {
           <div className="relative text-center lg:mt-[14%] text-shadow-sm">
             <h1 className="font-[YRDZST] text-[50px] md:text-[75px] lg:text-[100px]">中文角</h1>
             <h3 className="font-[acme] text-[18px] md:text-[22px] lg:text-[30px]">Chinese Conversation Table</h3>
-            <h4 className="font-[acme] text-[18px] md:text-[22px] lg:text-[30px]">Wed 7PM | Fri 5PM | EAS-3379</h4>
+            <h4 className="font-[acme] text-[18px] md:text-[22px] lg:text-[30px]">Fri 5PM | EAS-3381</h4>
           </div>
 
           {/* Mission statement */}
@@ -108,9 +108,9 @@ export default function Home() {
 
               <div className="col-span-4 sm:col-span-3 h-[fit] m-auto inset-0">
                 <StackedText 
-                  text1={"每个星期三7点和星期五5点，我们会在EAS-3379聚集"} 
+                  text1={"每个星期五5点，我们会在EAS-3379聚集"} 
                   text1className="font-[YRDZST] text-[16px] md:text-[18px] lg:text-[24px]"
-                  text2={"Our meeting times are 5pm on Fridays and 7pm on Wednesdays in EAS-3379"}
+                  text2={"Our meeting times are 5pm on Fridays in EAS-3381"}
                   text2className={"font-[acme] text-[14px] md:text-[16px] lg:text-[18px]"} 
                   className="mb-[20px]"/>
                 <StackedText 
