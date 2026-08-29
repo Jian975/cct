@@ -22,7 +22,7 @@ import ClientWrapper from "./utility/ClientWrapper";
 export default function Home() {
   return (
     <div className="">
-      <main className="">
+      <main className="@container">
 
         <ClientWrapper>
 
@@ -33,7 +33,7 @@ export default function Home() {
             alt="Hero Image"
             containerClassName="absolute inset-0 w-full h-[50lvh] md:h-[70lvh] lg:h-[90lvh] top-[-20] z-[-2]"
             blurredClassName="blur-[20px] opacity-70 h-full"
-            unblurredClassName="h-[90%] inset-5"
+            unblurredClassName="h-[90%] inset-5 invisible sm:visible"
             />
           <Image 
             src={LeftTree} 
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* Mission statement */}
-          <div className="text-center m-auto mt-[40px] md:mt-[70px] lg:mt-[140px]">
+          <div className="text-center m-auto ml-[30px] mr-[30px] mt-[40px] md:mt-[70px] lg:mt-[140px]">
             <StackedText 
             text1={"我们的使命是将汉语学习者和母语人士聚集在一起,以促进语言练习和文化交流。"} 
             text1className="font-[YRDZST] text-[14px] md:text-[18px] lg:text-[24px]"
@@ -98,15 +98,15 @@ export default function Home() {
         </div>
 
         {/* Description */}
-        <div className="relative w-full h-fit">
+        <div className="relative w-full h-fit @max-[465px]:mb-[150px]">
           <div className="">
-            <div className="relative grid grid-cols-4 ml-[10%] mr-[10%] z-[1] inset-[10] mt-[80px] wd:mt-[40px] mb-[40px]">
+            <div className="relative grid grid-cols-4 ml-[10%] mr-[10%] z-[1] inset-[10] mt-[80px] wd:mt-[40px] mb-[20%] md:mb-[40px]">
               <Image 
                 src={Eastman} 
                 alt={""} 
-                className="object-cover rounded-[5] w-[100px] h-[150px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[250px]"/>
+                className="object-cover rounded-[5] w-[100px] h-[150px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[250px] hidden sm:inline"/>
 
-              <div className="col-span-3 h-[fit] m-auto">
+              <div className="col-span-4 sm:col-span-3 h-[fit] m-auto inset-0">
                 <StackedText 
                   text1={"每个星期三7点和星期五5点，我们会在EAS-3379聚集"} 
                   text1className="font-[YRDZST] text-[16px] md:text-[18px] lg:text-[24px]"
@@ -123,14 +123,14 @@ export default function Home() {
           </div>
 
           {/* Background */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 @container">
             <UnblurImage 
             src={ZenGarden} 
             alt={"An image of the Zen Garden"}
             containerClassName="w-full h-full object-cover"
-            blurredClassName="blur-[10px] opacity-40 object-cover md:h-[250px] lg:h-[320px]" 
-            unblurredClassName="object-cover h-full inset-3 md:inset-[20] md:left-0 md:h-[80%] lg:h-[90%]"/>
-            <div className="absolute w-full bg-black opacity-30 z-[-1] inset-0 h-[180px] md:h-[80%] lg:h-[90%] md:left-0 md:inset-5" />
+            blurredClassName="blur-[10px] opacity-40 object-cover h-[280px] md:h-[250px] lg:h-[320px]" 
+            unblurredClassName="object-cover h-full inset-3 md:inset-[20] md:left-0 md:h-[80%] lg:h-[90%] invisible sm:visible"/>
+            <div className="absolute w-full bg-black opacity-30 z-[-1] inset-0 @max-[465px]:h-[250px] @max-[640px]:h-[150px] sm:h-[180px] md:h-[80%] lg:h-[90%] md:left-0 md:inset-5" />
           </div>
         </div>
 
@@ -141,7 +141,7 @@ export default function Home() {
                   text1className="font-[YRDZST] md:text-[20px] lg:text-[24px]"
                   text2={"Ranging From Mahjong to Improv, we immerse you in all sorts of fun activities. "}
                   text2className={"font-[acme] md:text-[18px] lg:text-[18px]"} 
-                  className="text-center mt-[80px] mb-[80px] text-coffee"/>
+                  className="text-center mt-[100px] mb-[80px] text-coffee ml-[30px] mr-[30px]"/>
           <Image 
             src={Activities} 
             alt={"A photo of club activities"}
