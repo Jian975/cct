@@ -63,14 +63,14 @@ export default function UnblurImage({
       <Image
         src={src}
         alt={alt}
-        className={`w-full h-full pointer-events-none ${blurredClassName}`}
+        className={`w-full pointer-events-none ${blurredClassName}`}
       />
 
       {/* Foreground: Unblurred Layer (Revealed via CSS Mask) */}
       <Image
         src={src}
         alt={alt}
-        className={`absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-300 ${unblurredClassName}`}
+        className={`absolute w-full left-0 pointer-events-none transition-opacity duration-300 ${unblurredClassName}`}
         style={{
           opacity: maskData.opacity,
           WebkitMaskImage: `radial-gradient(circle ${maskRadius}px at ${maskData.x}px ${maskData.y}px, black 50%, transparent 100%)`,
