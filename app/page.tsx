@@ -16,18 +16,24 @@ import PairedText from "./ui/text/PairedText";
 import UnderlinedItem from "./ui/UnderlineItem";
 import ImageButton from "./ui/ImageButton";
 import Header from "./ui/Header";
+import UnblurImage from "./ui/UnblurredImage";
+import ClientWrapper from "./utility/ClientWrapper";
 
 export default function Home() {
   return (
     <div className="">
       <main className="">
 
-        {/* Hero Background */}
+        <ClientWrapper>
+
+          {/* Hero Background */}
         <div className="relative">
-          <Image
+          <UnblurImage
             src={HeroImage}
             alt="Hero Image"
-            className="absolute inset-0 w-full h-[90lvh] top-0 z-[-2] blur-[20px] opacity-70"
+            containerClassName="absolute inset-0 w-full h-[90lvh] top-0 z-[-2]"
+            blurredClassName="blur-[20px] opacity-70"
+            unblurredClassName=""
             />
           <Image 
             src={LeftTree} 
@@ -80,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* Mission statement */}
-          <div className="text-center m-auto mt-[180px]">
+          <div className="text-center m-auto mt-[140px]">
             <StackedText 
             text1={"我们的使命是将汉语学习者和母语人士聚集在一起,以促进语言练习和文化交流。"} 
             text1className="font-[YRDZST] text-[24px]"
@@ -118,10 +124,11 @@ export default function Home() {
 
           {/* Background */}
           <div className="absolute inset-0">
-            <Image 
+            <UnblurImage 
             src={ZenGarden} 
             alt={"An image of the Zen Garden"}
-            className="blur-[10px] opacity-40 w-full h-full object-cover" />
+            containerClassName="w-full h-full object-cover"
+            blurredClassName="blur-[10px] opacity-40" />
             <div className="absolute w-full inset-5 h-[90%] left-0 bg-black opacity-30 z-[-1]" />
           </div>
         </div>
@@ -173,6 +180,11 @@ export default function Home() {
             className="absolute inset-0 w-full h-[500px] object-cover opacity-70 z-[-1]"/>
           
         </div>
+
+        </ClientWrapper>
+      
+        
+
 
       </main>
     </div>
