@@ -108,7 +108,7 @@ export default function Home() {
 
               <div className="col-span-4 sm:col-span-3 h-[fit] m-auto inset-0">
                 <StackedText 
-                  text1={"每个星期五5点，我们会在EAS-3379聚集"} 
+                  text1={"每个星期五5点，我们会在EAS-3381聚集"} 
                   text1className="font-[YRDZST] text-[16px] md:text-[18px] lg:text-[24px]"
                   text2={"Our meeting times are 5pm on Fridays in EAS-3381"}
                   text2className={"font-[acme] text-[14px] md:text-[16px] lg:text-[18px]"} 
