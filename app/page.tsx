@@ -3,6 +3,7 @@ import StackedText from "./ui/text/StackedText";
 
 import CampusGroupIcon from "../public/icons/campusGroup.png";
 import EmailIcon from "../public/icons/emailIcon.png";
+import DiscordIcon from "../public/icons/Discord-Symbol-Blurple.svg";
 
 import HeroImage from "../public/photos/Hero.jpg";
 import LeftTree from "../public/stocks/left_tree.png";
@@ -72,6 +73,11 @@ export default function Home() {
               imageLink={"https://campusgroups.rit.edu/CCT/"} 
               imageAlt={"Campus Group Icon"} 
               className="w-[30] h-[30]"/>
+            <ImageButton 
+              imageSrc={DiscordIcon} 
+              imageLink={"https://discord.com/invite/7D4qKgA4Us"} 
+              imageAlt={"Discord Icon"} 
+              className="w-[30] h-[30]"/>
           </div>
         </Header>
         
@@ -116,7 +122,7 @@ export default function Home() {
                 <StackedText 
                   text1={"无论你的水平如何，我们都欢迎你加入我们!"} 
                   text1className="font-[YRDZST] text-[16px] md:text-[18px] lg:text-[24px]"
-                  text2={"Whether you're a fluent speaker or staring out, come join us!"}
+                  text2={"Whether you're a fluent speaker or starting out, come join us!"}
                   text2className={"font-[acme] text-[14px] md:text-[16px] lg:text-[18px]"} />
               </div>
             </div>
@@ -168,6 +174,11 @@ export default function Home() {
                 imageSrc={CampusGroupIcon} 
                 imageLink={"https://campusgroups.rit.edu/CCT/"} 
                 imageAlt={"Campus Group Icon"} 
+                className="w-[30] h-[30] md:w-[60] md:h-[60] lg:w-[80] lg:h-[80]"/>
+              <ImageButton 
+                imageSrc={DiscordIcon} 
+                imageLink={"https://discord.com/invite/7D4qKgA4Us"} 
+                imageAlt={"Discord Icon"} 
                 className="w-[30] h-[30] md:w-[60] md:h-[60] lg:w-[80] lg:h-[80]"/>
             </div>
           </div>
