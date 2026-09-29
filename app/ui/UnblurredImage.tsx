@@ -58,7 +58,7 @@ export default function UnblurImage({
   }, []);
 
   return (
-    <div ref={containerRef} className={` ${containerClassName}`}>
+    <div ref={containerRef} className={` ${containerClassName} select-none`}>
       {/* Background: Blurred Layer */}
       <Image
         src={src}

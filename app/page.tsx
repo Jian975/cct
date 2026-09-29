@@ -10,7 +10,6 @@ import LeftTree from "../public/stocks/left_tree.png";
 import RightTree from "../public/stocks/right_tree.png";
 import ZenGarden from "../public/photos/ZenGarden.jpg";
 import Eastman from "../public/photos/Eastman.png";
-import Activities from "../public/photos/Activities.jpg";
 
 import FollowUs from "../public/photos/FollowUs.png";
 import PairedText from "./ui/text/PairedText";
@@ -19,6 +18,10 @@ import ImageButton from "./ui/ImageButton";
 import Header from "./ui/Header";
 import UnblurImage from "./ui/UnblurredImage";
 import ClientWrapper from "./utility/ClientWrapper";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import EventGallery from "./gallery/EventGallery";
+import { Text } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -28,7 +31,7 @@ export default function Home() {
         <ClientWrapper>
 
           {/* Hero Background */}
-        <div className="relative">
+        <div className="relative select-none">
           <UnblurImage
             src={HeroImage}
             alt="Hero Image"
@@ -110,7 +113,7 @@ export default function Home() {
               <Image 
                 src={Eastman} 
                 alt={""} 
-                className="object-cover rounded-[5] w-[100px] h-[150px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[250px] hidden sm:inline"/>
+                className="select-none object-cover rounded-[5] w-[100px] h-[150px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[250px] hidden sm:inline"/>
 
               <div className="col-span-4 sm:col-span-3 h-[fit] m-auto inset-0">
                 <StackedText 
@@ -148,16 +151,15 @@ export default function Home() {
                   text2={"Ranging From Mahjong to Improv, we immerse you in all sorts of fun activities. "}
                   text2className={"font-[acme] md:text-[18px] lg:text-[18px]"} 
                   className="text-center mt-[100px] mb-[80px] text-coffee ml-[30px] mr-[30px]"/>
-          <Image 
-            src={Activities} 
-            alt={"A photo of club activities"}
-            className="object-cover m-auto rounded-[10] shadow-4x4 w-[420px] md:mb-[20px] lg:mb-[80px] md:w-[600px] md:h-[400px] lg:w-[1100px] lg:h-[600px]"  />       
+          
+          <EventGallery className={"m-auto w-[300px] sm:w-[420px] md:mb-[20px] lg:mb-[80px] md:w-[600px] md:h-[400px] lg:w-[1100px] lg:h-[600px]"}/>
+                 
         </div>
 
         {/* Connect with us */}
-        <div className="relative w-full h-fit">
+        <div className="relative w-full h-fit select-none">
           
-          <div className="absolute inset-30 md:inset-55">
+          <div className="absolute inset-30 md:inset-55 z-1">
             <StackedText 
                   text1={"快来关注我们吧！"} 
                   text1className="font-[YRDZST] md:text-[36px] lg:text-[48px]"
@@ -182,22 +184,21 @@ export default function Home() {
                 className="w-[30] h-[30] md:w-[60] md:h-[60] lg:w-[80] lg:h-[80]"/>
             </div>
           </div>
-          
 
-          
-
-          <Image 
-            src={FollowUs} 
-            alt={"A picture of us eating at Gracys"} 
-            className="absolute inset-0 w-full h-[280px] md:h-[500px] object-cover opacity-70 z-[-1]"/>
-          
+            <Image 
+              src={FollowUs} 
+              alt={"A picture of us eating at Gracys"} 
+              className="inset-0 w-full h-[280px] md:h-[500px] object-cover opacity-70 z-[-1] brightness-70"/>
         </div>
 
+        <div className="relative w-full h-fit">
+          <Button className="absolute mt-[15px] text-right absolute right-0 bottom-0" variant="link">
+            <a className="text-foreground font-[YRDZST] md:text-[20px] lg:text-[22px]" href="https://mingfz0.github.io/" target="_blank">Site by: Mingfeng Zhong</a>
+            </Button>
+        </div>
+
+
         </ClientWrapper>
-      
-        
-
-
       </main>
     </div>
   );
