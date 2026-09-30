@@ -20,7 +20,7 @@ import UnblurImage from "./ui/UnblurredImage";
 import ClientWrapper from "./utility/ClientWrapper";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import EventGallery from "./gallery/EventGallery";
-import { Text } from "lucide-react";
+import { ChevronsRightIcon, GitForkIcon, Text } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -192,12 +192,11 @@ export default function Home() {
         </div>
 
         <div className="relative w-full h-fit">
-          <Button className="absolute mt-[15px] text-right absolute right-0 bottom-0" variant="link">
-            <a className="text-foreground font-[YRDZST] md:text-[20px] lg:text-[22px]" href="https://mingfz0.github.io/" target="_blank">Site by: Mingfeng Zhong</a>
+          <Button className="absolute mt-[15px] text-right absolute right-0 bottom-0 bg-transparent hover:bg-coffee" variant="outline">
+            <GitForkIcon />
+            <a className="text-foreground font-[YRDZST] md:text-[20px] lg:text-[22px] text-foreground2 hover:text-foreground" href="https://github.com/MingFZ0" target="_blank">Design & Coded by Mingfeng Zhong</a>
             </Button>
         </div>
-
-
         </ClientWrapper>
       </main>
     </div>
